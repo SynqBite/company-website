@@ -21,12 +21,26 @@ header {
   padding: 20px 60px;
   background-color: #1e1e1e;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0; 
+  width: 100%;
+  z-index: 1000; 
 }
+
 
 header .logo {
   font-size: 1.5rem;
   font-weight: 700;
 }
+
+header .logo img {
+  height: 40px;
+  width: auto;
+  margin-right: 10px;
+  vertical-align: middle;
+  border-radius: 50px;
+}
+
 
 nav a {
   color: #f5f5f5;
@@ -179,15 +193,11 @@ nav .book-btn {
   border: 2px solid #fff;
 }
 
-.timeline-date {
-  color: #ccc;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
 
 .timeline-content {
+  margin: 20px 30px;
   background-color: rgba(255, 255, 255, 0.05);
-  padding: 15px 20px;
+  padding: 20px 20px;
   border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   text-align: left;
@@ -201,6 +211,15 @@ nav .book-btn {
 .timeline-content p {
   color: #ccc;
   font-size: 0.95rem;
+}
+.timeline-content a {
+  color: #00bfa6;
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+.timeline-content a:hover{
+  text-decoration: underline;
+  color: #ccc;
 }
 
 /* About Section */
