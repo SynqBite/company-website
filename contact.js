@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
     e.preventDefault();
     console.log("Form submission triggered.");
 
-    emailjs.sendForm("service_4y45n4h", "template_lsy6sj9", this)
+    emailjs.sendForm("service_4y45n4h", "template_y6puzau", this)
       .then(function(response) {
         console.log("Email successfully sent!", response);
         alert("Your request has been sent successfully! We'll follow up with you shortly.");
