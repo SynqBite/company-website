@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="contact.css">
-    <title>Contact - us</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - SynqBite</title>
+  <link rel="stylesheet" href="contact.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 <body>
-      <header>
-    <a href="index.html">
-      <div class="logo">
-       <img src="./SynqBite.png" alt="Logo image">
-       SynqBite
-      </div>
-    </a>
-    <nav>
-      <a href="#services">Services</a>
-      <a href="#explore">Our Work</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-  <section id="contact" class="contact-section">
-  <h2>Contact Us</h2>
-  <form class="contact-form">
+
+<header>
+  <a href="index.html">
+    <div class="logo">
+      <img src="./SynqBite.png" alt="Logo image">
+      SynqBite
+    </div>
+  </a>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#explore">Our Work</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="contact" class="contact-section">
+  <h2>Book a Consultation</h2>
+  <form id="contact-form">
     <div class="form-group">
       <input type="text" name="name" placeholder="Your Name" required>
     </div>
@@ -31,10 +34,17 @@
       <input type="email" name="email" placeholder="Your Email" required>
     </div>
     <div class="form-group">
+      <input type="date" name="date" id="date" required>
+    </div>
+    <div class="form-group">
       <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
     </div>
-    <button type="submit">Send Message</button>
+    <button type="submit">Book Consultation</button>
   </form>
 </section>
+
+<!-- Include your contact.js file -->
+<script src="contact.js"></script>
+
 </body>
 </html>
