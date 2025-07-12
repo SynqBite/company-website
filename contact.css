@@ -73,9 +73,10 @@ nav .book-btn {
   font-weight: bold;
 }
 
-.contact-section {
-  padding: 120px 60px 60px; /* offset for fixed header */
-  text-align: center;
+.contact-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .contact-section h2 {
@@ -85,8 +86,6 @@ nav .book-btn {
 }
 
 .contact-form {
-  max-width: 600px;
-  margin: 0 auto;
   background-color: #2e2e2e;
   padding: 40px;
   border-radius: 10px;
